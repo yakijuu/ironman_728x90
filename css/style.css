@@ -1,0 +1,193 @@
+*{
+	margin: 0 ;
+	padding: 1%;
+	box-sizing: border-box;
+}
+#box{
+	border: 1px solid #000;
+	width: 728px;
+	height: 90px;
+	position: relative;
+	overflow: hidden;
+	background: url("../assets/avengers_300x250_bg.jpg") no-repeat;
+	background-size: 750px;
+}
+#circle{
+	position: absolute;
+	border-radius: 50%;
+	width: 0px;
+	height: 0px;
+	top: 85%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	animation: cir 2s;
+	background-color: #fff;
+	opacity: -1;
+}
+@keyframes cir{
+	from{
+		border: 15px solid skyblue; 
+		width: 500px; 
+		height: 500px; 
+		opacity: 1;
+	}
+	to{
+		border: 1px solid skyblue;
+		width: 30px; 
+		height: 30px; 
+		opacity: 0.5;
+	}
+}
+#tt{
+	position: absolute;
+	top: -8%;
+	left: 0%;
+	animation: tt 2s;
+	animation-delay: 1.5s;
+	width: 300px;
+	height: 100px;
+	visibility: hidden;
+	background: url("../assets/avengers_300x250_tt.png") no-repeat;
+	background-size: contain;
+	z-index: 100;
+}
+@keyframes tt{
+	from{
+		left: -10%; 
+		opacity: 0;
+	}
+	to{
+		left: 0%; 
+		opacity: 1;
+	}
+}
+#text{
+	position: absolute;
+	top: 12%;
+	right: 8%;
+	animation: textt 2s;
+	animation-delay: 1.5s;
+	width: 250px;
+	height: 50px;
+	visibility: hidden;
+	background: url("../assets/text.png") no-repeat;
+	background-size: contain;
+	z-index: 100;
+}
+@keyframes textt{
+	from{
+		right: -10%; 
+		opacity: 0;
+	}
+	to{
+		right: 8%; 
+		opacity: 1;
+	}
+}
+#ironman{
+	position: absolute;
+	top: 85%;
+	left: 65%;
+	transform: translate(-50%,-50%);
+	animation: ironManMove 2s;
+	width: 500px;
+	height: 250px;
+	background: url("../assets/avengers_300x250_ironman.png") no-repeat;
+	background-size: contain;
+}
+@keyframes ironManMove{
+	from{
+		width: 10px; 
+		height: 10px; 
+		opacity: 0;
+	}
+	to{
+		width: 500px; 
+		height: 250px; 
+		opacity: 1;
+	}
+}
+#expbutton{
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	animation: expbutton 4s;
+	animation-delay: 1.5s;
+	width: 80px;
+	height: 80px;
+	visibility: hidden;
+	background: url("../assets/avengers_300x250_exp_button.png") no-repeat;
+	background-size: contain;
+	z-index: 100;
+}
+@keyframes expbutton{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 10;
+	}
+}
+
+#twitter{
+	position: absolute;
+	bottom: 9%;
+	right: 21%;
+	animation: social 2s;
+	animation-delay: 1.5s;
+	width:30px;
+	height: 30px;
+	visibility: hidden;
+	background: url("../assets/avengers_300x250_social_twitter.png") no-repeat;
+	background-size: contain;
+}
+#fb{
+	position: absolute;
+	bottom: 9%;
+	right: 16%;
+	animation: social 2s;
+	animation-delay: 1.5s;
+	width: 30px;
+	height: 30px;
+	visibility: hidden;
+	background: url("../assets/avengers_300x250_social_fb.png") no-repeat;
+	background-size: contain;
+}
+#yt{
+	position: absolute;
+	bottom: 9%;
+	right: 11%;
+	animation: social 2s;
+	animation-delay: 1.5s;
+	width: 30px;
+	height: 30px;
+	visibility: hidden;
+	background: url("../assets/avengers_300x250_social_yt.png") no-repeat;
+	background-size: contain;
+}
+@keyframes social{
+	from{
+		bottom:-10%; 
+		opacity: 0;
+	}
+	to{
+		bottom: 9%; 
+		opacity: 10;
+	}
+}
+#expbutton:hover,
+#twitter:hover,
+#fb:hover,
+#yt:hover{
+	filter: brightness(100%) sepia(100%) saturate(1000%);
+}
+
+#reload{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin: 1px 0px;
+	background: url("../assets/reload.png") no-repeat;
+	background-size: contain;
+}
